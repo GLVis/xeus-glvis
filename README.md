@@ -5,7 +5,7 @@
 ### Install Dependencies
 1) Install [xeus-cling](https://github.com/jupyter-xeus/xeus-cling)
 2) Install [pyglvis](https://github.com/glvis/pyglvis)
-  - this is for the widget frontend, we will update the install to improve this step in the future
+    - this is for the widget frontend, we will update the install to improve this step in the future
 
 ### Example with saved file
 
@@ -35,5 +35,6 @@ glv
 
 ## TODO
 
-- Constructor that takes a std::string
+- Constructor that takes an `std::string`
 - Routines that take a `Mesh` and `GridFunction`
+- binder example
