@@ -15,7 +15,7 @@
 const std::string stream = glvis::read_file("path/to/stream.saved");
 
 auto glv = glvis::glvis();
-glv.show(stream);
+glv.plot(stream);
 glv
 ```
 
@@ -28,8 +28,14 @@ std::stringstream ss;
 ss << "solution\n" << mesh << x << flush;
 
 auto glv = glvis::glvis();
-glv.show(ss.str());
+glv.plot(ss.str());
 glv
+
+// update a time-dependent solution:
+glv.update(stream_string);
+
+// change the plot size:
+glv.size_size(width, height);
 ```
 
 
