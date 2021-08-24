@@ -106,7 +106,7 @@ public:
     height = height;
   }
 
-  inline void draw(const std::string &stream) { sync(stream, true); }
+  inline void plot(const std::string &stream) { sync(stream, true); }
 
   inline void update(const std::string &stream) { sync(stream, false); }
 };
