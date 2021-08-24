@@ -9,7 +9,14 @@
 # terms of the BSD-3 license. We welcome feedback and contributions, see file
 # CONTRIBUTING.md for details.
 
+prefix ?= local
+
 .PHONY: format
 
 format:
 	@clang-format -i include/*
+
+install: target=$(prefix)/include/glvis
+install:
+	@mkdir -p $(target)
+	@cp include/glvis/* $(target)
