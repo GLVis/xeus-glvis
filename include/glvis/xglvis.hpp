@@ -44,8 +44,8 @@ private:
   using base_type = xw::xwidget<D>;
   static constexpr int default_width = 640;
   static constexpr int default_height = 480;
-  static constexpr const char *model_version = "0.2.0";
-  static constexpr const char *view_version = "0.2.0";
+  static constexpr const char *model_version = "0.3.1";
+  static constexpr const char *view_version = "0.3.1";
 
   XPROPERTY(std::string, D, data_str);
   XPROPERTY(std::string, D, data_type);
